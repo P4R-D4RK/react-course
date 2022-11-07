@@ -12,5 +12,14 @@ root.render(
   <>
     <TaskCard ready={true}/>
     <Saludar/>
+    <Button text="Saludar"/>
+
+    <form onSubmit={(e) => {
+      e.preventDefault()
+      alert('Enviado')
+    }}>
+      <h1>Registro de usuario</h1>
+      <button>Send</button>
+    </form>
   </>
 );
